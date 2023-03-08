@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media screen and (max-width: 800px) {
+  :root {
+    font-size: 50%;
+  }
+}
+
+* {
+  z-index: -1;
+}
+
+html {
+  background-color: #E2DCD7;
+  font-family: 'Playfair Display', serif;
+}
+
+#icon1 {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+#icon2 {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+#icon3 {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.iconTitle {
+  display: inline-block; 
+  font-weight: 700; 
+  vertical-align: 50px;
+}
+
+.iconSubtitle {
+  display: inline; 
+  font-size: 14px;
+  position: relative;
+  right: 76px;
+  bottom: 22px;
+}
+
+#logo {
+  width: 25%;
+}
+
+#header-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#nav-bar {
+  top: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  z-index: 1;
+}
+
+#nav-bar a {
+  font-size: 2rem;
+  justify-content: space-evenly;
+  flex: 1;
+  background-color: #ddcaba;
+  text-decoration: none;
+  text-align: center;
+  transition: background-image 0.5s, border-radius 1s;
+}
+
+#nav-bar a:hover {
+  background-color: gold;
+  border-radius: 4px;
+}
+
+.videoAdjust {
+  position: relative;
+  top: 50%;
+  left: 33%;
+  z-index: 1;
+}
+
+
+.brandStatement {
+  font-size: 40px;
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+}
+
+iframe {
+  margin-bottom: 30px;
+}
+
+
+.gradient {
+  background: linear-gradient(90deg, red, magenta, cyan);
+  background-clip: text;-webkit-background-clip: text;color: transparent;
+}
+
+a {
+  color: blue;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: red;
+  animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
